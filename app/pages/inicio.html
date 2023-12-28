@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/8f27d68390.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="carrito.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="scrip1.js" defer></script>
+  <script src="carrito.js" defer></script>
+  <script src="menu.js" defer></script>
+  <script src="pagar.js" defer></script>
+  <script src="reserva.js" type="module"></script>
+
+  <!-------------- BoxIcons Stylesheet Link -------------->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-------------- Owl Carousel Stylesheet Links -------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <!-------------- AOS Stylesheet Link -------------->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+  <!-------------- Light Gallery Stylesheet Link -------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+  <title>El Horno Restaurant2</title>
+</head>
+
+<body>
+
+  <header>
+
+    <!-------------- PreNav Text Start-------------->
+
+
+    <div id="prenav-text">
+      <div class="flex-row">
+        <div class="contact-info">Contacto: <span>+593 987 654 321
+          </span> o Correo:
+          <span>elhorno@gmail.com</span>
+        </div>
+        <div class="opening-times flex-row">
+          Lunes - Viernes / 8:00-16:30. Sabado - Domingo / 8:00-17:00
+          <ul class="social-links flex-row">
+            <li><a href="https://www.facebook.com/elhorno.manta" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/elhorno.manta/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=593998721366&text=Saludos+El+Horno+Restaurante%E2%80%A6+Deseo+Realizar+un+Pedido&type=phone_number&app_absent=0" target="_blank"><i class="bx bxl-whatsapp"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-------------- PreNav Text End-------------->
+
+
+    <!-------------- Navbar Start-------------->
+
+    <nav id="navbar" class="navbar flex-row">
+
+      <div class="nav-icon menu-btn-wrapper">
+        <i id="menu-btn" class="menu-btn bx bx-menu"></i>
+      </div>
+
+      <div class="logo">
+        <h5>El <span>Horno</span></h5>
+      </div>
+
+      <ul id="nav-items" class="nav-items">
+        <li><a href="#home" class="nav-links">HOME</a></li>
+        <li><a href="#menu" class="nav-links">MENU</a></li>
+        <li><a href="#about" class="nav-links">RESERVACION</a></li>
+        <li><a href="#map" class="nav-links">UBICACION</a></li>
+        <li><a href="#footer" class="nav-links">CONTACTO</a></li>
+      </ul>
+
+      <ul class="nav-btns">
+
+        <div id="busc" class="search-btn-wrapper nav-icon">
+          <i class="searchbtn bx bx-search-alt-2"></i>
+          <div id="search-form" class="search-form">
+            <form action="#">
+              <input type="search" class="search-data" placeholder="Search" required>
+              <button type="submit" class="bx bx-search-alt-2"></button>
+            </form>
+          </div>
+        </div>
+
+        <div class="cart-btn-wrapper nav-icon" class="whole-cart-window hide" class="cart-box">
+          <div class="cart-icon">
+            <i class="cartbtn bx bx-cart" title="Carrito"></i>
+          </div>
+          <div id="cart" class="whole-cart-window hide">
+            <h3 class="carrotitle">Carrito</h3>
+            <div class="cart-wrapper">
+
+            </div>
+            <div class="Envio">Envio: $0.00</div>
+            <div  class="subtotal">Subtotal: $0.00</div>
+            
+            <div class="checkout" onclick="Pagar()">Pedir</div>
+
+          </div>
+        </div>
+        <a href="/"><div class="nav-icon" id="logout-icon">
+          <i class="bx bx-log-out" title="Cerrar Sesion"></i>
+        </div></a>
+        <div class="nav-icon">
+          <i class="darkbtn bx bx-moon" title="Cambiar Modo"></i>
+        </div>
+               
+        
+      </ul>
+    </nav>
+
+    <!-------------- Navbar End-------------->
+  </header>
+
+  <!-------------- Home Section Start-------------->
+
+  <section id="home">
+    <div class="home-carousel owl-carousel owl-theme">
+      <div class="slide slide1">
+        <div class="content">
+          <p class="sub-heading">EL HORNO RESTAURANT</p>
+          <h1 class="heading">Excelente Calidad</h1>
+          <p class="sub-heading-2">FOOD</p>
+        </div>
+      </div>
+      <div class="slide slide2">
+        <div class="content">
+          <p class="sub-heading">EL HORNO RESTAURANT</p>
+          <h1 class="heading">Cocinando desde </h1>
+          <p class="sub-heading-2">2018</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-------------- Home Section End-------------->
+
+
+  <!-------------- About Section Start-------------->
+  <section id="about" class="flex-row">
+    <div class="booking-form" data-aos="fade-right" data-aos-duration="1000">
+      <span>Toma una </span>
+      <h2>RESERVACION</h2>
+      <form id="reserva-form">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+        <input type="text" name="correo" id="correo" placeholder="Correo" required>
+        <input type="text" name="telefono" id="telefono" placeholder="Telefono" required>
+        <input type="date" name="fechaReservacion" id="fechaReservacion" required>
+        <input type="time" name="horaReservacion" id="horaReservacion" required>
+        <textarea name="mensaje" id="mensaje" placeholder="Mensaje" required></textarea>
+        <button type="submit" class="btn1" id="reservaBtn">Reserva</button>
+
+      </form>
+      <div class="error-reserva" style="color: red;"></div>
+    </div>
+
+    <div class="text-wrapper" data-aos="fade-left" data-aos-duration="1000">
+      <h1>El HORNO</h1>
+      <h3>Restaurant</h3>
+      <p>Desayunos <br>Almuerzos.</p>
+    </div>
+
+    <div class="img-wrapper" data-aos="fade-left" data-aos-duration="1000">
+      <img src="./Images/About/hornito.jpg" alt="#">
+    </div>
+  </section>
+
+  <!-------------- About Section End-------------->
+
+  <!-------------- Menu Section Start-------------->
+
+  <section id="menu" class="menu-section">
+
+    <div class="section-heading">
+      <h3>Special Selections</h3>
+      <h1>From Our Menu</h1>
+      <div class="square-wrapper flex-row">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+    </div>
+
+    <!-------------- Menu Nav -------------->
+    <div class="menu-tabs flex-row" data-aos="zoom-in" data-aos-duration="1000"
+      data-aos-anchor-placement="bottom-bottom">
+      <div class="menu-tab-item active" data-target="#main-dishes">
+        <i class="fas fa-coffee"></i>
+        <span>Desayunos</span>
+      </div>
+      <div class="menu-tab-item" data-target="#starters">
+        <i class="fas fa-utensils"></i>
+        <span>Almuerzos</span>
+      </div>
+      <div class="menu-tab-item" data-target="#desserts">
+        <i class="fas fa-book-open"></i>
+        <span>Platos especiales</span>
+      </div>
+      <div class="menu-tab-item" data-target="#drinks">
+        <i class="fas fa-glass-whiskey"></i>
+        <span>Bebidas</span>
+      </div>
+    </div>
+
+
+    <div id="main-dishes" class="menu-tab-content show" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+
+      <!-- Menu Item Start -->
+  <div class="menu-item">
+          <div class="menu-item-inner">
+
+            <div data-id="1" class="food-img">
+              <img src="./Images/Main-dishes/bqueso.png" alt="#">
+          
+              <div class="dish-details">
+                <h2>Bolon de queso</h2>
+                <p class="desc">Delicioso bolón de queso con ingredientes frescos y sabrosos.</p>
+              <p>
+                <span></span>
+                <span class="precio">Precio: $2.75</span>
+                <button class="add-to-cart-btn" onclick="agregarAlCarrito(1, 'Bolon de queso', 2.75)">Agregar al Carrito</button>
+              </p>
+            </div>
+            
+          </div>
+          </div>
+  </div>
+  <div class="menu-item">
+
+    <div class="menu-item-inner">
+      <div data-id="2" class="food-img">
+        <img src="./Images/Main-dishes/bchicharron.png"alt="#" >
+    
+        <div class="dish-details">
+          <h2>Bolon de chicharron</h2>
+          <p class="desc">Delicioso bolón de chicharron con ingredientes frescos y sabrosos.</p>
+        <p>
+          <span></span>
+          <span class="precio">Precio: $2.75</span>
+          <button class="add-to-cart-btn">Agregar al Carrito</button>
+        </p>
+      </div>
+    </div>
+    </div>
+</div>
+    <div class="menu-item">
+
+          <div class="menu-item-inner">
+            <div data-id="3" class="food-img">
+              <img src="./Images/Main-dishes/blonganiza.png"alt="#"/>
+          
+              <div class="dish-details">
+                <h2>Bolon de longaniza</h2>
+                <p class="desc">Delicioso bolón de longaniza con ingredientes frescos y sabrosos.</p>
+              <p>
+                <span></span>
+                <span class="precio">Precio: $2.75</span>
+                <button class="add-to-cart-btn">Agregar al Carrito</button>
+              </p>
+            </div>
+          </div>
+          </div>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-inner">
+      
+      <div data-id="4" class="food-img">
+        <img src="./Images/Main-dishes/bcamaron.png" alt="#">
+    
+        <div class="dish-details">
+          <h2>Bolon de camaron</h2>
+          <p class="desc">Delicioso bolón de camaron con ingredientes frescos y sabrosos.</p>
+        <p>
+          <span></span>
+          <span class="precio">Precio: $3.25</span>
+          <button class="add-to-cart-btn">Agregar al Carrito</button>
+        </p>
+      </div>
+      
+    </div>
+    </div>
+</div>
+<div class="menu-item">
+<div class="menu-item-inner">
+
+<div data-id="5" class="food-img">
+  <img src="./Images/Main-dishes/bmixto.png " alt="#">
+
+  <div class="dish-details">
+    <h2>Bolon mixto</h2>
+    <p class="desc">Delicioso bolón mixto con ingredientes frescos y sabrosos.</p>
+  <p>
+    <span></span>
+    <span class="precio">Precio: $3.25</span>
+    <button class="add-to-cart-btn">Agregar al Carrito</button>
+  </p>
+</div>
+
+</div>
+</div>
+</div>
+<div class="menu-item">
+<div class="menu-item-inner">
+
+<div data-id="6" class="food-img">
+<img src="./Images/Main-dishes/bcompleto.png" alt="#">
+
+<div class="dish-details">
+  <h2>Bolon completo</h2>
+  <p class="desc">Delicioso bolón completo con ingredientes frescos y sabrosos.</p>
+<p>
+  <span></span>
+  <span class="precio">Precio: $3.75</span>
+  <button class="add-to-cart-btn">Agregar al Carrito</button>
+</p>
+</div>
+
+</div>
+</div>
+</div>
+<!-------------- 2parte -------------->
+<div class="menu-item">
+<div class="menu-item-inner">
+
+<div data-id="7" class="food-img">
+<img src="./Images/Main-dishes/tqueso.png" alt="#">
+
+<div class="dish-details">
+  <h2>Tortilla de queso</h2>
+  <p class="desc">Deliciosa tortilla de queso con ingredientes frescos y sabrosos.</p>
+<p>
+  <span></span>
+  <span class="precio">Precio: $3.75</span>
+  <button class="add-to-cart-btn">Agregar al Carrito</button>
+</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="menu-item">
+<div class="menu-item-inner">
+
+<div data-id="8" class="food-img">
+<img src="./Images/Main-dishes/tcamaron.png" alt="#">
+
+<div class="dish-details">
+  <h2>Tortilla de camaron</h2>
+  <p class="desc">Deliciosa tortilla de camaron con ingredientes frescos y sabrosos.</p>
+<p>
+  <span></span>
+  <span class="precio">Precio: $3.75</span>
+  <button class="add-to-cart-btn">Agregar al Carrito</button>
+</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="menu-item">
+<div class="menu-item-inner">
+
+<div data-id="9" class="food-img">
+<img src="./Images/Main-dishes/tigqueso.png" alt="#">
+
+<div class="dish-details">
+  <h2>Tigrillo de queso</h2>
+  <p class="desc">Delicioso tigrillo de queso con ingredientes frescos y sabrosos.</p>
+<p>
+  <span></span>
+  <span class="precio">Precio: $3.25</span>
+  <button class="add-to-cart-btn">Agregar al Carrito</button>
+</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="menu-item">
+<div class="menu-item-inner">
+
+<div data-id="10" class="food-img">
+<img src="./Images/Main-dishes/tigchicharron.png" alt="#">
+
+<div class="dish-details">
+  <h2>Tigrillo de chicharron</h2>
+  <p class="desc">Delicioso tigrillo de chicharron con ingredientes frescos y sabrosos.</p>
+<p>
+  <span></span>
+  <span class="precio">Precio: $3.25</span>
+  <button class="add-to-cart-btn">Agregar al Carrito</button>
+</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="menu-item">
+<div class="menu-item-inner">
+
+<div data-id="11" class="food-img">
+<img src="./Images/Main-dishes/tigmixto.png" alt="#">
+
+<div class="dish-details">
+  <h2>Tigrillo mixto</h2>
+  <p class="desc">Delicioso tigrillo mixto con ingredientes frescos y sabrosos.</p>
+<p>
+  <span></span>
+  <span class="precio">Precio: $3.75</span>
+  <button class="add-to-cart-btn">Agregar al Carrito</button>
+</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="menu-item">
+<div class="menu-item-inner">
+
+<div data-id="12" class="food-img">
+<img src="./Images/Main-dishes/cuajada.png" alt="#">
+
+<div class="dish-details">
+  <h2>Cuajada</h2>
+  <p class="desc">Deliciosa cuajada con ingredientes frescos y sabrosos.</p>
+<p>
+  <span></span>
+  <span class="precio">Precio: $2.75</span>
+  <button class="add-to-cart-btn">Agregar al Carrito</button>
+</p>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+<!-------------- Starters -------------->
+<div id="starters" class="menu-tab-content">
+<div class="menu-item">
+  <div class="menu-item-inner">
+    <div data-id="13" class="food-img">
+      <img src="Images/Starters/cgallinacriolla.png" alt="#">
+      <div class="dish-details">
+        <h2>Caldo de gallina criolla</h2>
+        <p class="desc">Delicioso caldo de gallina criolla con ingredientes frescos y sabrosos.</p>
+      <p>
+        <span></span>
+        <span class="precio">Precio: $6</span>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </p>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="menu-item">
+  <div class="menu-item-inner">
+    <div data-id="14" class="food-img">
+      <img src="Images/Starters/sgallinacriolla.png" alt="#">
+  
+      <div class="dish-details">
+        <h2>Seco de gallina criolla</h2>
+        <p class="desc">Delicioso seco de gallina criolla con ingredientes frescos y sabrosos.</p>
+        
+      <p>
+        <span></span>
+        <span class="precio">Precio: $6</span>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </p>
+    </div>
+    
+  </div>
+
+  </div>
+</div>
+<div class="menu-item">
+  <div class="menu-item-inner">
+    <div data-id="15" class="food-img">
+      <img src="Images/Starters/cchancho.png" alt="#">
+  
+      <div class="dish-details">
+        <h2>Caldo de chancho</h2>
+        <p class="desc">Delicioso caldo de chancho con ingredientes frescos y sabrosos.</p>
+        
+      <p>
+        <span></span>
+        <span class="precio">Precio: $6</span>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </p>
+    </div>
+    
+  </div>
+
+  </div>
+</div>
+<div class="menu-item">
+  <div class="menu-item-inner">
+    <div data-id="16" class="food-img">
+      <img src="Images/Starters/scostillachancho.png" alt="#">
+  
+      <div class="dish-details">
+        <h2>Seco de costilla de chancho</h2>
+        <p class="desc">Delicioso seco de costilla de chancho con ingredientes frescos y sabrosos.</p>
+        
+      <p>
+        <span></span>
+        <span class="precio">Precio: $6</span>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </p>
+    </div>
+    
+  </div>
+
+  </div>
+</div>
+
+<div class="menu-item">
+  <div class="menu-item-inner">
+    <div data-id="17" class="food-img">
+      <img src="Images/Starters/vpescado.jpg" alt="#">
+  
+      <div class="dish-details">
+        <h2>Viche de pescado</h2>
+        <p class="desc">Delicioso viche de pescado con ingredientes frescos y sabrosos.</p>
+        
+      <p>
+        <span></span>
+        <span class="precio">Precio: $6</span>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </p>
+    </div>
+    
+  </div>
+
+  </div>
+</div>
+
+<div class="menu-item">
+  <div class="menu-item-inner">
+    <div data-id="18" class="food-img">
+      <img src="Images/Starters/vmarinero.jpeg" alt="#">
+  
+      <div class="dish-details">
+        <h2>Viche marinero</h2>
+        <p class="desc">Delicioso viche marinero con ingredientes frescos y sabrosos.</p>
+        
+      <p>
+        <span></span>
+        <span class="precio">Precio: $10</span>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </p>
+    </div>
+    
+  </div>
+
+  </div>
+</div>
+
+
+<div class="menu-item">
+  <div class="menu-item-inner">
+    <div data-id="19" class="food-img">
+      <img src="Images/Starters/churrasco.webp" alt="#">
+  
+      <div class="dish-details">
+        <h2>Churrasco</h2>
+        <p class="desc">Delicioso churrasco con ingredientes frescos y sabrosos.</p>
+        
+      <p>
+        <span></span>
+        <span class="precio">Precio: $7</span>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </p>
+    </div>
+    
+  </div>
+
+  </div>
+</div>
+
+<div class="menu-item">
+  <div class="menu-item-inner">
+    <div data-id="20" class="food-img">
+      <img src="Images/Starters/schivo.jpg" alt="#">
+  
+      <div class="dish-details">
+        <h2>Seco de chivo</h2>
+        <p class="desc">Delicioso seco de chivo con ingredientes frescos y sabrosos.</p>
+        
+      <p>
+        <span></span>
+        <span class="precio">Precio: $6.50</span>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </p>
+    </div>
+    
+  </div>
+
+  </div>
+</div>
+
+<div class="menu-item">
+  <div class="menu-item-inner">
+    <div data-id="21" class="food-img">
+      <img src="Images/Starters/scamotillo.jpg" alt="#">
+  
+      <div class="dish-details">
+        <h2>Sudado de camotillo</h2>
+        <p class="desc">Delicioso sudado de camotillo con ingredientes frescos y sabrosos.</p>
+        
+      <p>
+        <span></span>
+        <span class="precio">Precio: $12</span>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </p>
+    </div>
+    
+  </div>
+
+  </div>
+</div>
+
+
+</div>
+  <!-------------- Desserts -------------->
+<div id="desserts" class="menu-tab-content">
+
+<!-- Menu Item Start -->
+<div class="menu-item">
+    <div class="menu-item-inner">
+      <div data-id="22" class="food-img">
+        <img src="Images/Dessert/camotillof.jpg" alt="#">
+        <div class="dish-details">
+          <h2>Camotillo frito</h2>
+          <p class="desc">Delicioso camotillo frito con ingredientes frescos y sabrosos.</p>
+        <p>
+          <span></span>
+          <span class="precio">Precio: $12</span>
+          <button class="add-to-cart-btn">Agregar al Carrito</button>
+        </p>
+      </div>
+    </div>
+    </div>
+</div>
+<div class="menu-item">
+  <div class="menu-item-inner">
+    <div data-id="23" class="food-img">
+      <img src="Images/Dessert/pescadop.webp" alt="#">
+      <div class="dish-details">
+        <h2>Pescado a la plancha</h2>
+        <p class="desc">Delicioso pescado a la plancha con ingredientes frescos y sabrosos.</p>
+      <p>
+        <span></span>
+        <span class="precio">Precio: $7</span>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </p>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="menu-item">
+<div class="menu-item-inner">
+  <div data-id="24" class="food-img">
+    <img src="Images/Dessert/pescadoa.jpg" alt="#">
+    <div class="dish-details">
+      <h2>Pescado apanado</h2>
+      <p class="desc">Delicioso pescado apanado con ingredientes frescos y sabrosos.</p>
+    <p>
+      <span></span>
+      <span class="precio">Precio: $7</span>
+      <button class="add-to-cart-btn">Agregar al Carrito</button>
+    </p>
+  </div>
+</div>
+</div>
+</div>
+<div class="menu-item">
+<div class="menu-item-inner">
+<div data-id="25" class="food-img">
+  <img src="Images/Dessert/camaronajillo.jpg" alt="#">
+  <div class="dish-details">
+    <h2>Camarones al ajillo </h2>
+    <p class="desc">Deliciosos camarones al ajillo  con ingredientes frescos y sabrosos.</p>
+  <p>
+    <span></span>
+    <span class="precio">Precio: $7</span>
+    <button class="add-to-cart-btn">Agregar al Carrito</button>
+  </p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="menu-item">
+<div class="menu-item-inner">
+<div data-id="26" class="food-img">
+<img src="Images/Dessert/camaronapa.jpg" alt="#">
+<div class="dish-details">
+  <h2>Camaron apanado </h2>
+  <p class="desc">Delicioso camaron apanado con ingredientes frescos y sabrosos.</p>
+<p>
+  <span></span>
+  <span class="precio">Precio: $8</span>
+  <button class="add-to-cart-btn">Agregar al Carrito</button>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="menu-item">
+<div class="menu-item-inner">
+<div data-id="27" class="food-img">
+<img src="Images/Dessert/apanadomix.jpg" alt="#">
+<div class="dish-details">
+  <h2>Apanado mixto</h2>
+  <p class="desc">Delicioso apanado mixto con ingredientes frescos y sabrosos.</p>
+<p>
+  <span></span>
+  <span class="precio">Precio: $9</span>
+  <button class="add-to-cart-btn">Agregar al Carrito</button>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="menu-item">
+<div class="menu-item-inner">
+<div data-id="28" class="food-img">
+<img src="Images/Dessert/cangrejos.avif" alt="#">
+<div class="dish-details">
+  <h2>Cangrejos criollos </h2>
+  <p class="desc">Deliciosos cangrejos criollos con ingredientes frescos y sabrosos.</p>
+<p>
+  <span></span>
+  <span class="precio">Precio: $7</span>
+  <button class="add-to-cart-btn">Agregar al Carrito</button>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="menu-item">
+<div class="menu-item-inner">
+<div data-id="29" class="food-img">
+<img src="Images/Dessert/arrozmarinero.jpg" alt="#">
+<div class="dish-details">
+<h2>Arroz marinero</h2>
+<p class="desc">Delicioso arroz marinero con ingredientes frescos y sabrosos.</p>
+<p>
+<span></span>
+<span class="precio">Precio: $10</span>
+<button class="add-to-cart-btn">Agregar al Carrito</button>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="menu-item">
+<div class="menu-item-inner">
+<div data-id="30" class="food-img">
+<img src="Images/Dessert/longapatacones.jpg" alt="#">
+<div class="dish-details">
+<h2>Longaniza con patacones</h2>
+<p class="desc">Deliciosa longaniza con patacones  con ingredientes frescos y sabrosos.</p>
+<p>
+<span></span>
+<span class="precio">Precio: $6</span>
+<button class="add-to-cart-btn">Agregar al Carrito</button>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+ <!-------------- Drinks -------------->
+<div id="drinks" class="menu-tab-content">
+<div class="menu-item">
+  <div class="menu-item-inner">
+    <div data-id="31" class="food-img">
+      <img src="Images/Drinks/agua.webp" alt="#">
+      <div class="dish-details">
+        <h2>Agua</h2>
+        <p class="desc">Agua fresca e hidratante.</p>
+      <p>
+        <span></span>
+        <span class="precio">Precio: $0.50</span>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </p>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="menu-item">
+  <div class="menu-item-inner">
+    <div data-id="32" class="food-img">
+      <img src="Images/Drinks/jugos.jpg" alt="#">
+      <div class="dish-details">
+        <h2>Jugos naturales</h2>
+        <p class="desc">Jugo natural hecho con frutos frescos.</p>
+      <p>
+        <span></span>
+        <span class="precio">Precio: $1</span>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </p>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="menu-item">
+  <div class="menu-item-inner">
+    <div data-id="33" class="food-img">
+      <img src="Images/Drinks/ensaladafruta.webp" alt="#">
+      <div class="dish-details">
+        <h2>Ensalada de frutas</h2>
+        <p class="desc">Ensalada de frutas hecho con frutas frescas.</p>
+      <p>
+        <span></span>
+        <span class="precio">Precio: $1.50</span>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </p>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="menu-item">
+  <div class="menu-item-inner">
+    <div data-id="34" class="food-img">
+      <img src="Images/Drinks/chicha.webp" alt="#">
+      <div class="dish-details">
+        <h2>Chicha</h2>
+        <p class="desc">Deliciosa y fresca chicha.</p>
+      <p>
+        <span></span>
+        <span class="precio">Precio: $1.50</span>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="menu-item">
+  <div class="menu-item-inner">
+    <div data-id="35" class="food-img">
+      <img src="Images/Drinks/jugosjarra.jpg" alt="#">
+      <div class="dish-details">
+        <h2>Jarra de jugo natural</h2>
+        <p class="desc">Jarra de jugo familiar.</p>
+      <p>
+        <span></span>
+        <span class="precio">Precio: $4</span>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="menu-item">
+  <div class="menu-item-inner">
+    <div data-id="36" class="food-img">
+      <img src="Images/Drinks/jarrachicha.jpg" alt="#">
+      <div class="dish-details">
+        <h2>Jarra de chicha</h2>
+        <p class="desc">Jarra de chicha familiar.</p>
+      <p>
+        <span></span>
+        <span class="precio">Precio: $5</span>
+        <button class="add-to-cart-btn">Agregar al Carrito</button>
+      </p>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+</div>
+</section>
+
+
+
+
+<!-------------- Gallery Section Start-------------->
+
+<section id="gallery">
+
+  <div class="section-heading">
+    <h3>Nuestra Galeria <h3>
+    <div class="square-wrapper flex-row">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+  </div>
+
+  <div class="gallery-wrapper flex-row" data-aos="fade-right" data-aos-duration="1000">
+
+    <!-- Gallery Img Start -->
+    <a class="gallery-img" href="/Images/Gallery/food-galler-img-1.jpg">
+      <img src="/Images/Gallery/img1.jpg" alt="#">
+      <div class="overlay">
+        <i class="icon bx bx-search"></i>
+      </div>
+    </a>
+    <!-- Gallery Img End -->
+
+
+    <!-- Gallery Img Start -->
+    <a class="gallery-img" href="/Images/Gallery/food-galler-img-2.jpg">
+      <img src="/Images/Gallery/img2.jpg" alt="#">
+      <div class="overlay">
+        <i class="icon bx bx-search"></i>
+      </div>
+    </a>
+    <!-- Gallery Img End -->
+
+
+    <!-- Gallery Img Start -->
+    <a class="gallery-img" href="/Images/Gallery/food-galler-img-3.jpg">
+      <img src="/Images/Gallery/img3.jpg" alt="#">
+      <div class="overlay">
+        <i class="icon bx bx-search"></i>
+      </div>
+    </a>
+    <!-- Gallery Img End -->
+
+
+    <!-- Gallery Img Start -->
+    <a class="gallery-img" href="/Images/Gallery/food-galler-img-4.jpg">
+      <img src="/Images/Gallery/img4.jpg" alt="#">
+      <div class="overlay">
+        <i class="icon bx bx-search"></i>
+      </div>
+    </a>
+    <!-- Gallery Img End -->
+
+
+    <!-- Gallery Img Start -->
+    <a class="gallery-img" href="/Images/Gallery/food-galler-img-5.jpg">
+      <img src="/Images/Gallery/img5.jpg" alt="#">
+      <div class="overlay">
+        <i class="icon bx bx-search"></i>
+      </div>
+    </a>
+    <!-- Gallery Img End -->
+
+
+    <!-- Gallery Img Start -->
+    <a class="gallery-img" href="/Images/Gallery/food-galler-img-6.jpg">
+      <img src="/Images/Gallery/img6.jpg" alt="#">
+      <div class="overlay">
+        <i class="icon bx bx-search"></i>
+      </div>
+    </a>
+    <!-- Gallery Img End -->
+
+
+  </div>
+
+</section>
+
+<!-------------- Map Section Start -------------->
+
+<section class="map" id="map">
+  <div class="section-heading">
+    <h3>Ubicación</h3>
+    <h1>Encuéntranos en el Mapa</h1>
+  </div>
+
+  <!-- Map Container Start -->
+  <div id="google-map" data-aos="fade-up" data-aos-duration="1000">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.269422784618!2d-80.74449412546024!3d-0.9504115353503673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902be1a3906f8531%3A0xb1c36768e55a1b41!2sEl%20Horno%20Restaurante!5e0!3m2!1ses-419!2sec!4v1703126469829!5m2!1ses-419!2sec" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <!-- Map Container End -->
+
+</section>
+
+<!-------------- Map Section End -------------->
+
+<!-------------- Footer Start-------------->
+
+<footer id="footer">
+  <div class="footer-top flex-row">
+
+    <div class="flex-col">
+      <h4 class="logo-name">EL HORNO</h4>
+
+      <p class="desc">LA MEJOR COMIDA CRIOLLA COCINADA EN LEÑA ATENDEMOS DE LUNES A DOMINGO</p>
+
+      <ul class="social-links">
+        <li><a href="#"><i class="icon bx bxl-facebook"></i></a></li>
+        <li><a href="#"><i class="icon bx bxl-twitter"></i></a></li>
+        <li><a href="#"><i class="icon bx bxl-instagram"></i></a></li>
+      </ul>
+
+    </div>
+
+    <div class="flex-col">
+      <h4 class="heading">DIRECCION</h4>
+
+      <p class="desc">Avenida Ascario Paz</p>
+      <p class="desc">Manta 130203<br>Ecuador</p>
+    </div>
+
+    <div class="flex-col">
+      <h4 class="heading">HORARIOS</h4>
+      <ul class="timings flex-col">
+        <li>
+          <p class="days">Lunes</p>
+          <div class="time">8:00 - 16:30</div>
+        </li>
+        <li>
+          <p class="days">Martes</p>
+          <div class="time">8:00 - 16:30</div>
+        </li>
+        <li>
+          <p class="days">Miercoles</p>
+          <div class="time">8:00 - 16:30</div>
+        </li>
+        <li>
+          <p class="days">Jueves</p>
+          <div class="time">8:00 - 16:30</div>
+        </li>
+        <li>
+          <p class="days">Viernes</p>
+          <div class="time">8:00 - 16:30</div>
+        </li>
+        <li>
+          <p class="days">Sabado</p>
+          <div class="time">8:00 - 17:00</div>
+        </li>
+        <li>
+          <p class="days">Domingo</p>
+          <div class="time">8:00 - 17:00</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom flex-row">
+    <span>Copyright &copy 2023 All rights reserved </span>
+  </div>
+
+</footer>
+
+<!-------------- Footer End -------------->
+
+
+<!-------------- JQuery Script -------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<!-------------- Owl Carousel Script -------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-------------- AOS Script -------------->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-------------- Light Gallery Script -------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script>
+  lightGallery(document.querySelector('.gallery-wrapper'));
+</script>
+
+<!-------------- Local JS Script -------------->
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+<link rel="stylesheet" href="user.css">
+
+</head>
+<body>
+    <div class="login-form">
+        <h1>
+            <a href="/">
+                <img src="Images/Home/casita.png" alt="Inicio" class="home-icon" style="width: 70px; height: 70px;">
+            </a>
+            Inicio de sesion de usuario</h1>
+        <div class="container">
+            <div class="main">
+                <div class="content">
+                    <h2>Inicia sesion</h2>
+                    <form id="login-form">
+                        <input type="text" id="user" name="user" placeholder="Usuario" required autofocus="">
+                        <input type="password" id="password" name="password" placeholder="Contraseña" required autofocus="">
+                         <button class="btn" type="submit">Inicia sesion</button>
+                         <p class="error escondido">Usuario o Contraseña incorrectos*</p>
+                    </form>
+                    <p class="account">Aun no tienes cuenta? <a href="register">Registrate</a></p>
+                     
+                </div>
+                <div class="form-img">
+                    <img src="Images/About/hornito.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js" defer></script>
+</body>
+</html>

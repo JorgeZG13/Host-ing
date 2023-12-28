@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+<link rel="stylesheet" href="user.css">
+</head>
+<body>
+    <div class="login-form">
+        <h1>
+            <a href="/">
+                <img src="Images/Home/casita.png" alt="Inicio" class="home-icon" style="width: 70px; height: 70px;">
+            </a>
+            Registro de usuario</h1>
+        <div class="container">
+            <div class="main">
+                <div class="content">
+                    <h2>Registrate</h2>
+                    <form id="register-form">
+                        <input type="text" id="user" name="user" placeholder="Nombre y Apellido" required autofocus="">
+                        <input type="email" id="email" name="email" placeholder="Correo" required autofocus="">
+                        <input type="password" id="password" name="" placeholder="Contraseña" required autofocus="">
+                        <input type="password" placeholder="Repite Contraseña" required autofocus="">
+                        <p class="error escondido">Error al registrarse*</p>
+                         <button class="btn" type="submit">
+                            Registrate
+                         </button>
+
+                    </form>
+                    <p class="account">Ya tienes cuenta? <a href="login">Inicia sesion</a></p>
+                     
+                </div>
+                <div class="form-img">
+                    <img src="Images/About/hornito.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="register.js" defer></script>
+</body>
+</html>
